@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddNewCarActivity">
+
+    <ImageView
+        android:id="@+id/img_add_photo"
+        android:layout_width="350dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="20dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_baseline_photo_camera_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/tv_name_car_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/etstyles"
+        android:hint="Tên xe"
+        android:inputType="textMultiLine"
+        android:padding="20dp"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@id/img_add_photo"
+        app:layout_constraintStart_toStartOf="@id/img_add_photo"
+        app:layout_constraintTop_toBottomOf="@id/img_add_photo" />
+
+    <EditText
+        android:id="@+id/tv_rating_car_add"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/etstyles"
+        android:hint="đánh giá"
+        android:inputType="number"
+        android:padding="20dp"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_name_car_add" />
+
+    <EditText
+        android:id="@+id/tv_version_car_add"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/etstyles"
+        android:hint="Phiên bản"
+        android:inputType="textMultiLine"
+        android:padding="20dp"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_name_car_add"
+        app:layout_constraintLeft_toRightOf="@id/tv_rating_car_add"
+        app:layout_constraintTop_toBottomOf="@id/tv_name_car_add" />
+
+    <EditText
+        android:id="@+id/tv_seat_car_add"
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/etstyles"
+        android:hint="ghế"
+        android:inputType="number"
+        android:padding="20dp"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_rating_car_add" />
+
+    <EditText
+        android:id="@+id/tv_gate_car_add"
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/etstyles"
+        android:hint="cửa"
+        android:inputType="number"
+        android:padding="20dp"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toRightOf="@id/tv_seat_car_add"
+        app:layout_constraintTop_toBottomOf="@id/tv_rating_car_add" />
+
+    <EditText
+        android:id="@+id/tv_shift_car_add"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/etstyles"
+        android:hint="Số xe"
+        android:inputType="textMultiLine"
+        android:padding="20dp"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@id/tv_name_car_add"
+        app:layout_constraintLeft_toRightOf="@id/tv_gate_car_add"
+        app:layout_constraintTop_toBottomOf="@id/tv_rating_car_add" />
+
+    <EditText
+        android:id="@+id/tv_price_car_add"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/etstyles"
+        android:hint="giá xe"
+        android:inputType="number"
+        android:padding="20dp"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_material_car_add"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_seat_car_add" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/tv_status_car_add"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/etstyles"
+        android:checked="false"
+        android:hint="Trạng thái"
+        android:padding="15dp"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_material_car_add"
+        app:layout_constraintEnd_toEndOf="@id/tv_name_car_add"
+        app:layout_constraintLeft_toRightOf="@id/tv_price_car_add"
+        app:layout_constraintTop_toBottomOf="@id/tv_shift_car_add" />
+
+    <EditText
+        android:id="@+id/tv_material_car_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/etstyles"
+        android:hint="mô tả"
+        android:inputType="text"
+        android:padding="20dp"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@id/img_add_photo"
+        app:layout_constraintStart_toStartOf="@id/img_add_photo"
+        app:layout_constraintTop_toBottomOf="@id/tv_price_car_add" />
+
+    <EditText
+        android:id="@+id/edt_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/etstyles"
+        android:hint="Địa chỉ nhận xe"
+        android:inputType="text"
+        android:padding="20dp"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@id/img_add_photo"
+        app:layout_constraintStart_toStartOf="@id/img_add_photo"
+        app:layout_constraintTop_toBottomOf="@id/tv_material_car_add" />
+
+    <Button
+        android:id="@+id/btn_add_car"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Thêm xe"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@id/tv_name_car_add"
+        app:layout_constraintStart_toStartOf="@id/tv_name_car_add"
+        app:layout_constraintTop_toBottomOf="@id/edt_address" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
